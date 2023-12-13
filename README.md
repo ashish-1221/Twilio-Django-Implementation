@@ -1,2 +1,6 @@
 # Twilio-Django-Implementation
-Integrate twilio with SMS functionality into React + Django web app
+
+Integrating twilio with SMS functionality into a ReactJS + Django web app
+
+## Functionalities 
+
