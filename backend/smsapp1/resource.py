@@ -1,5 +1,5 @@
 from import_export import resources,fields
-from smsapp.models import *
+from smsapp1.models import *
 from import_export.widgets import ForeignKeyWidget
 
 

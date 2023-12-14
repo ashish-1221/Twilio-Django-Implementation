@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class SmsappConfig(AppConfig):
+class Smsapp1Config(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'smsapp'
+    name = 'smsapp1'

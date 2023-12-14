@@ -11,12 +11,12 @@ class Group(models.Model):
         return self.group_name
     
 class User(models.Model):
-    id = models.AutoField(primary_key=True)
-    email = models.EmailField(verbose_name="Email",null=True,blank=True,default="email@domain.com")
+    user_id = models.AutoField(primary_key=True)
+    email = models.EmailField(verbose_name="Email",null=True,blank=True)
     first_name = models.CharField(verbose_name="First Name",null=True,blank=True,max_length=50)
     last_name = models.CharField(verbose_name="Last Name",blank=True,max_length=50)
     mobile_no = PhoneNumberField(null=False,blank=False,unique=True)
-    group = models.ForeignKey(Group,on_delete=models.CASCADE)
+    group = models.ManyToManyField(Group)
     opt_in = models.BooleanField(verbose_name="Receive Text Messages",null=False,blank=False,default=1)
     
     def __str__(self):
